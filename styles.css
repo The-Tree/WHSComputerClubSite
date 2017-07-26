@@ -1,7 +1,8 @@
 /* WCC CSS Document */
 body {
 	height: 100%;
-	background: #CECECE;
+	width: 100%;
+	background: #C8C8C8;
 }
 
 /* reset browser defaults */
@@ -18,58 +19,89 @@ body {
 	width: 100%;
 	height: 3em;
 	background: #0073B3;
+	min-width: 50em;
+	top: 0;
+}
+
+#pageLink:link, #pageLink:hover , #pageLink visited {
+	position: relative;
+	margin-left: 2em;
+	font-family: "Segoe UI";
+	text-decoration: none;
+	line-height: 3em;
+}
+
+#pageLink:link, #pageLink:visited {
+	color: #d8d8d8;
+}
+
+#pageLink:hover {
+	color: white;
 }
 
 #logo {
-	width: 20em;
+	width: 25em;
 	height: 2.5em;
-	margin-left: 1em;
 	margin-top: 0.2em;
+	margin-left: 1em;
+	float: left;
 }
 
-#slideshow {
-	position: block;
+#mainImg {
+	position: absolute;
 	width: 100%;
-	height: 25em;
+	height: 35em;
+	overflow: hidden;
+	min-width: 50em;
+}
+
+#newsContainer {
+	position: relative;
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 28em;
+	z-index: 1;
+	min-width: 50em;
 }
 
 #news {
-	position: block;
-	width: auto;
-	height: auto;
-	margin: 2em 2em 2em 2em;
+	padding: 5em;
+	min-width: 100%;
+	max-width: 100em;
+	min-height: 30em;
 	background: #FFFFFF;
-	border-radius: 5px;
-	padding: 3em 3em 3em 3em;
-	box-shadow: 0.2em 0.2em 0.1em #888888;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3em;
+	border-radius: 5px 40px;
+	min-width: 50em;
+	box-shadow: 7px 7px 5px #888888;
 }
 
 #mainArea {
-	z-index: 1;
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 100%;
-}
-
-#newsArea {
-	position: relative;
-	width: 100%;
-	height: auto;
+	margin-top: 0;
+	min-width: 50em;
 }
 
 #image {
+	position: absolute;
 	width: 100%;
-	height: 25em;
+	bottom: -15em;
 }
 
 #text {
-	font-family: "Courier New";
+	font-family: "Segoe UI";
 	text-indent: 2em;
 	text-align: justify;
 }
 
 h1 {
-	font-family: "Courier New";
+	font-family: "Segoe UI";
 	text-align: center;
 	font-weight: bold;
 }
